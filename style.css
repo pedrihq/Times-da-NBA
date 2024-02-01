@@ -1,0 +1,153 @@
+:root {
+  --cor-principal: white;
+  --cor-secundaria: black;
+  --fonte-principal: "Roboto";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body principal */
+body {
+  background: linear-gradient(
+    0deg,
+    rgb(255, 132, 0) 0%,
+    rgb(223, 130, 0) 56%,
+    rgb(255, 165, 82) 100%
+  );
+  height: 100vh;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-principal);
+}
+body h1{
+    padding: 1em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-principal);
+    width: 100%;
+}
+/*Mudança de cores de cada equipe*/
+.atlanta_hawks {
+  background:linear-gradient(0deg, rgba(201,53,46,1) 0%, #D64E63 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.boston_celtics {
+  background: linear-gradient(0deg, rgba(1,131,72,1) 0%, rgba(74,165,122,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.brookliyn_nets {
+  background: linear-gradient(0deg, rgba(7,25,34,1) 0%, rgba(59,72,79,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.charlotte_hornet {
+  background: linear-gradient(0deg, rgba(30,18,97,1) 0%, rgba(75,83,139,1) 56%, rgba(166,165,184,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.chicago_bulls {
+  background: linear-gradient(0deg, rgba(204,17,65,1) 0%, rgba(140,20,55,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.cleveland_cavalier {
+  background: linear-gradient(0deg, rgba(188,148,92,1) 0%, rgba(167,91,78,1) 19%, rgba(178,121,85,1) 33%, rgba(154,56,69,1) 68%, rgba(134,1,56,1) 86%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.miami_heat {
+  background: linear-gradient(0deg, rgba(147,1,46,1) 37%, rgba(236,153,28,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.milwaukee_bucks {
+  background: linear-gradient(0deg, rgba(2,72,27,1) 37%, rgba(78,122,84,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.new_york_knicks {
+  background: linear-gradient(0deg, rgba(242,131,39,1) 37%, rgba(42,71,138,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.orlando_magic {
+  background: linear-gradient(0deg, rgba(10,27,36,1) 0%, rgba(28,130,198,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.philadelphia_76ers {
+  background: linear-gradient(0deg, rgba(200,16,46,1) 0%, rgba(29,66,138,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.toronto_raptors{
+  background: #CD1844 !important;
+  transition: all 0.25s ease-in-out;
+}
+.indiana_pacers {
+  background: linear-gradient(0deg, rgba(250,185,48,1) 0%, rgba(1,45,98,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+.washington_wizards{
+  background: linear-gradient(0deg, rgba(1,42,92,1) 0%, rgba(254,254,254,1) 50%, rgba(230,38,62,1) 100%) !important;
+  transition: all 0.25s ease-in-out;
+}
+
+/*navbar de escolher qual a conferência(leste/oste)*/
+#nav_primaria {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  gap: 1%;
+}
+#nav_primaria a{
+  border-radius: 2px;
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+#nav_primaria a:hover{
+    border-bottom: 1px solid var(--cor-principal);
+}
+/*navbar feita para escolher o time*/
+#ecolha_times {
+  padding: 1% 3% 1%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--cor-principal);
+  border-top: 2px solid var(--cor-principal);
+}
+/*acora do time escolhido*/
+.time_escolhido {
+  padding: 1%;
+  height: 100%;
+  border-left: 2px solid var(--cor-principal);
+  border-right: 2px solid var(--cor-principal);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  color: var(--cor-secundaria);
+  cursor: pointer;
+}
+.time_escolhido:hover {
+  background-color: var(--cor-principal);
+  scale: 1.25;
+  font-size: 100%;
+}
+.escolhido{
+  background-color: var(--cor-principal);
+  scale: 1.25;
+  font-size: 100%;
+}
+/*img do times*/
+.times {
+  width: 100%;
+  margin: 0 25%;
+}
+.nomes_times {
+  font-size: 43%;
+  font-weight: 700;
+}
+/*animação dos bnt*/
+.animacao {
+  transition: all linear 0.2s;
+}
+.animacao:active {
+  transform: scale(90%);
+}
