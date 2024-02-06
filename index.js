@@ -1,3 +1,169 @@
+const conferenciaLeste = [
+  {
+    nome: "Atlanta Hawks",
+    imagem: "./assets/logo-Atlanta_Hawks.png",
+    classe: "atlanta_hawks",
+  },
+  {
+    nome: "Boston Celtics",
+    imagem: "./assets/logo-Boston_Celtics.png",
+    classe: "boston_celtics",
+  },
+  {
+    nome: "Brooklyn Nets",
+    imagem: "./assets/logo-Brooklyn_Nets.png",
+    classe: "brookliyn_nets",
+  },
+  {
+    nome: "Charlotte Hornets",
+    imagem: "assets/logo-Charlotte_Hornets.png",
+    classe: "charlotte_hornet",
+  },
+  {
+    nome: "Chicago Bulls",
+    imagem: "assets/logo-Chicago_Bulls.png",
+    classe: "chicago_bulls",
+  },
+  {
+    nome: "Cleveland Cavaliers",
+    imagem: "assets/logo-Cleveland_Cavaliers.png",
+    classe: "cleveland_cavalier",
+  },
+  {
+    nome: "Detroit Pistons",
+    imagem: "assets/logo-Detroit_Pistons.png",
+    classe: "detroit_pistons",
+  },
+  {
+    nome: "Indiana Pacers",
+    imagem: "assets/logo-Indiana_Pacers.png",
+    classe: "indiana_pacers",
+  },
+  {
+    nome: "Mimi Heat",
+    imagem: "assets/logo-Miami_Heat.png",
+    classe: "miami_heat",
+  },
+  {
+    nome: "Milwaukee Bucks",
+    imagem: "assets/logo-Milwaukee_Bucks.png",
+    classe: "milwaukee_bucks",
+  },
+  {
+    nome: "New York Knicks",
+    imagem: "assets/logo-New_York_Knicks.png",
+    classe: "new_york_knicks ",
+  },{
+    nome: "Orlando Magic",
+    imagem: "assets/logo-Orlando_Magic.png",
+    classe: "orlando_magic",
+  },{
+    nome: "Philadelphia 76ers",
+    imagem: "assets/logo-Philadelphia_76ers.png",
+    classe: "philadelphia_76ers",
+  },{
+    nome: "Toronto Raptors",
+    imagem: "assets/logo-Toronto_Raptors.png",
+    classe: "toronto_raptors",
+  },{
+    nome: "Washington Wizards",
+    imagem: "assets/logo-Washington_Wizards.png",
+    classe: "washington_wizards",
+  },
+];
+const conferenciaOeste = [
+  {
+    nome: "Dallas Mavericks",
+    imagem: "./assets/logo-Dallas_Mavericks.png",
+    classe: "dallas_mavericks",
+  },
+  {
+    nome: "Denver Nuggets",
+    imagem: "./assets/logo-Denver_Nuggets.png",
+    classe: "miami_heat",
+  },
+  {
+    nome: "Golden State Warriors",
+    imagem: "./assets/logo-Golden_State_Warriors.png",
+    classe: "indiana_pacers",
+  },
+  {
+    nome: "Houston Rockets",
+    imagem: "assets/logo-Houston_Rockets.png",
+    classe: "houston_rockets",
+  },
+  {
+    nome: "Los Angeles Clippers",
+    imagem: "assets/logo-Los_Angeles_Clippers.png",
+    classe: "los_angeles_clippers",
+  },
+  {
+    nome: "Los Angeles Lakers",
+    imagem: "assets/logo-Los_Angeles_Lakers.png",
+    classe: "los_angeles_lakers",
+  },
+  {
+    nome: "Memphis Grizzlies",
+    imagem: "assets/logo-Memphis_Grizzlies.png",
+    classe: "memphis_grizzlies ",
+  },
+  {
+    nome: "Minnesota",
+    imagem: "assets/logo-Minnesota_Timberwolves.png",
+    classe: "minnesota",
+  },
+  {
+    nome: "New Orleans Pelicans",
+    imagem: "assets/logo-New_Orleans_Pelicans.png",
+    classe: "new_orleans_pelicans ",
+  },
+  {
+    nome: "Oklahoma City Thunder",
+    imagem: "assets/logo-Oklahoma_City_Thunder.png",
+    classe: "oklahoma_city_thunder",
+  },
+  {
+    nome: "Phonix Suns",
+    imagem: "assets/logo-Phonix_Suns.png",
+    classe: "phonix_suns",
+  },
+  {
+    nome: "Portland Trail Blazers",
+    imagem: "assets/logo-Portland_Trail_Blazers.png",
+    classe: "portland_trail_blazers ",
+  },
+  {
+    nome: "Sacramento Kings",
+    imagem: "assets/logo-Sacramento_Kings.png",
+    classe: "sacramento_kings",
+  },
+  {
+    nome: "San Antonio Spurs",
+    imagem: "assets/logo-San_Antonio_Spurs.png",
+    classe: "san_antonio_spurs",
+  },
+  {
+    nome: "Utah Jazz",
+    imagem: "assets/logo-Utah_Jazz.png",
+    classe: "utah_jazz",
+  },
+];
+
+const conteudo = document.querySelector("#ecolha_times");
+const conferenciaLesteBotao = document.querySelector("#cl");
+const conferenciaOesteBotao = document.querySelector("#co");
+const tituloPrincipal = document.querySelector("#titulo-principal")
+
+conferenciaLesteBotao.addEventListener("click", () => {
+  renderizarLista(conferenciaLeste);
+});
+
+conferenciaOesteBotao.addEventListener("click", () => {
+  renderizarLista(conferenciaOeste);
+});
+
+renderizarLista(conferenciaLeste);
+
 function selecionarItem(itemClicado) {
   var todosOsIntens = document.querySelectorAll(".time_escolhido");
   todosOsIntens.forEach((item) => {
@@ -5,93 +171,31 @@ function selecionarItem(itemClicado) {
   });
   itemClicado.classList.add("escolhido");
 }
-//Mudança de cor do Atlanta Hawks
-document.getElementById("atlanta-hawks").addEventListener("click", function () {
-  document.querySelector("body").setAttribute("class", "atlanta_hawks");
-  selecionarItem(document.querySelector("#atlanta-hawks"));
-});
-//Mudança de cor do Boston Celtics
-document
-  .getElementById("boston-celtics")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "boston_celtics");
-    selecionarItem(document.querySelector("#boston-celtics"));
-  });
-//Mudança de cor do Brooklin Nets
-document
-  .getElementById("brookliyn-nets")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "brookliyn_nets");
-    selecionarItem(document.querySelector("#brookliyn-nets"));
-  });
-//Mudança de cor do Charlotte Hornets
-document
-  .getElementById("charlotte-hornets")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "charlotte_hornet");
-    selecionarItem(document.querySelector("#charlotte-hornets"));
-  });
-//Mudança de cor do Chicago Bulls
-document.getElementById("chicago-bulls").addEventListener("click", function () {
-  document.querySelector("body").setAttribute("class", "chicago_bulls");
-  selecionarItem(document.querySelector("#chicago-bulls"));
-});
-//Mudança de cor do Cleveland Cavalier
-document
-  .getElementById("cleveland-cavaliers")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "cleveland_cavalier");
-    selecionarItem(document.querySelector("#cleveland-cavaliers"));
-  });
-//Mudança de cor do Indiana Pacers
-document
-  .getElementById("indiana-pacers")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "indiana_pacers");
-    selecionarItem(document.querySelector("#indiana-pacers"));
-  });
-//Mudança de cor do Miami Heat
-document.getElementById("miami-heat").addEventListener("click", function () {
-  document.querySelector("body").setAttribute("class", "miami_heat");
-  selecionarItem(document.querySelector("#miami-heat"));
-});
-//Mudança de cor do Milwukee-bucks
-document
-  .getElementById("milwaukee-bucks")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "milwaukee_bucks");
-    selecionarItem(document.querySelector("#milwaukee-bucks"));
-  });
-//Mudança de cor do New York Knicks
-document
-  .getElementById("new-york-knicks")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "new_york_knicks");
-    selecionarItem(document.querySelector("#new-york-knicks"));
-  });
-//Mudança de cor do Orlando Magic
-document.getElementById("orlando-magic").addEventListener("click", function () {
-  document.querySelector("body").setAttribute("class", "orlando_magic");
-  selecionarItem(document.querySelector("#orlando-magic"));
-});
-//Mudança de cor do Philadephia 76ears
-document
-  .getElementById("philadelphia-76ers")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "philadelphia_76ers");
-    selecionarItem(document.querySelector("#philadelphia-76ers"));
-  });
-//Mudança de cor do Toronto Raptors
-document
-  .getElementById("toronto-raptors")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "toronto_raptors");
-    selecionarItem(document.querySelector("#toronto-raptors"));
-  });
-//Mudança de cor do Washington Wizards
-document
-  .getElementById("washington-wizards")
-  .addEventListener("click", function () {
-    document.querySelector("body").setAttribute("class", "washington_wizards");
-    selecionarItem(document.querySelector("#washington-wizards"));
-  });
+
+function renderizarLista(lista) {
+  conteudo.innerHTML = "";
+  for (const time of lista) { 
+    const moldura = document.createElement("div"); // Cria moldura
+    moldura.setAttribute("class", "time_escolhido animacao"); // Seta classes da moldura
+
+    // Adiciona evento de clique
+    moldura.addEventListener("click", (e) => {
+      document.body.setAttribute("class", time.classe)// Seta classe da cor no body
+      selecionarItem(moldura) // Add classe do marcador
+      tituloPrincipal.innerText = time.nome; // add nome time a titulo Principal
+    });
+    
+    const imagem = document.createElement("img"); // Cria elemento da imagem
+    imagem.setAttribute("src", time.imagem); // Seta imagem
+    imagem.setAttribute("class", "times"); // Seta classe time
+
+    const titulo = document.createElement("h2");
+    titulo.setAttribute("class", "nomes_times");
+    titulo.innerText = time.nome;
+
+    moldura.appendChild(imagem);
+    moldura.appendChild(titulo);
+
+    conteudo.appendChild(moldura);
+  }
+}
