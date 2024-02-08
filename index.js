@@ -3,16 +3,74 @@ const conferenciaLeste = [
     nome: "Atlanta Hawks",
     imagem: "./assets/logo-Atlanta_Hawks.png",
     classe: "atlanta_hawks",
+    jogadores: [
+      "assets/jogadores/Atlanta Hawks/jog-Clint_Capela.png",
+      "assets/jogadores/Atlanta Hawks/jog-Onyeka_Okongwu.png",
+
+      "assets/jogadores/Atlanta Hawks/jog-Jalen_Johnson.png",
+      "assets/jogadores/Atlanta Hawks/jog-DeÁndre_Hunter.png",
+      "assets/jogadores/Atlanta Hawks/jog-Aj_Griffin.png",
+      "assets/jogadores/Atlanta Hawks/jog-Mouhamed_Gueye.png",
+      "assets/jogadores/Atlanta Hawks/jog-Bruno_Fernando.png",
+      "assets/jogadores/Atlanta Hawks/jog-Saddiq_bey.png",
+
+      "assets/jogadores/Atlanta Hawks/jog-Trent_Forrest.png",
+      "assets/jogadores/Atlanta Hawks/jog-Kobe_Bufkin.png",
+      "assets/jogadores/Atlanta Hawks/jog-Seth_Lundy.png",
+      "assets/jogadores/Atlanta Hawks/jog-Dejounte_Murray.png",
+      "assets/jogadores/Atlanta Hawks/jog-Patty_Mills.png",
+      "assets/jogadores/Atlanta Hawks/jog-Trae_Yong.png",
+      "assets/jogadores/Atlanta Hawks/jog-Bogdan_Bogdanovic.png",
+      "assets/jogadores/Atlanta Hawks/jog-Garrison_Mathews.png",
+      "assets/jogadores/Atlanta Hawks/jog-Vit_Krejci.png",
+      "assets/jogadores/Atlanta Hawks/jog-Wesley-Matthews.png",
+    ],
   },
   {
     nome: "Boston Celtics",
     imagem: "./assets/logo-Boston_Celtics.png",
     classe: "boston_celtics",
+    jogadores: [
+      "assets/jogadores/Boston Celtics/jog-Kristaps_Porzingis.png",
+      "assets/jogadores/Boston Celtics/jog-Luke_Kornet.png",
+      "assets/jogadores/Boston Celtics/jog-Al_Horford.png",
+      "assets/jogadores/Boston Celtics/jog-Neemias_Queta.png",
+
+      "assets/jogadores/Boston Celtics/jog-Xavier_Tilman_Sr.png",
+      "assets/jogadores/Boston Celtics/jog-Jayson_Tatum.png",
+      "assets/jogadores/Boston Celtics/jog-Oshae_Brissett.png",
+      "assets/jogadores/Boston Celtics/jog-Jordan_Walsh.png",
+      "assets/jogadores/Boston Celtics/jog-Sam_Hauser.png",
+      "assets/jogadores/Boston Celtics/jog-Dalano_Banton.png",
+      "assets/jogadores/Boston Celtics/jog-Svi_Mykhailiul.png",
+
+      "assets/jogadores/Boston Celtics/jog-Drew_Peterson.png",
+      "assets/jogadores/Boston Celtics/jog-Jrue_Holiday.png",
+      "assets/jogadores/Boston Celtics/jog-Jaylen_Brown.png",
+      "assets/jogadores/Boston Celtics/jog-Payton_Pritchard.png",
+      "assets/jogadores/Boston Celtics/jog-JD_Davison.png",
+    ],
   },
   {
     nome: "Brooklyn Nets",
     imagem: "./assets/logo-Brooklyn_Nets.png",
     classe: "brookliyn_nets",
+    jogadores: [
+      "assets/jogadores/Brooklyn Nets/jog-Nicolas_Claxton.png",
+
+      "assets/jogadores/Brooklyn Nets/jog-Mikal_Bridges.png",
+      "assets/jogadores/Brooklyn Nets/jog-Cameron_Johnson.png",
+      "assets/jogadores/Brooklyn Nets/jog-Trendo_Watford.png",
+      "assets/jogadores/Brooklyn Nets/jog-Day'Ron_Sharpe.png",
+      "assets/jogadores/Brooklyn Nets/jog-Noah_Clowney.png",
+      "assets/jogadores/Brooklyn Nets/jog-Jalen_Wilson.png",
+      "assets/jogadores/Brooklyn Nets/jog-Dorian_Finney-Smith.png",
+
+      "assets/jogadores/Brooklyn Nets/jog-Dennis_Smith_jr.png",
+      "assets/jogadores/Brooklyn Nets/jog-Lonnie_Walker_IV.png",
+      "assets/jogadores/Brooklyn Nets/jog-Cameron_Thomas.png",
+      "assets/jogadores/Brooklyn Nets/jog-Keon_Johnson.png",
+    ],
   },
   {
     nome: "Charlotte Hornets",
@@ -53,19 +111,23 @@ const conferenciaLeste = [
     nome: "New York Knicks",
     imagem: "assets/logo-New_York_Knicks.png",
     classe: "new_york_knicks ",
-  },{
+  },
+  {
     nome: "Orlando Magic",
     imagem: "assets/logo-Orlando_Magic.png",
     classe: "orlando_magic",
-  },{
+  },
+  {
     nome: "Philadelphia 76ers",
     imagem: "assets/logo-Philadelphia_76ers.png",
     classe: "philadelphia_76ers",
-  },{
+  },
+  {
     nome: "Toronto Raptors",
     imagem: "assets/logo-Toronto_Raptors.png",
     classe: "toronto_raptors",
-  },{
+  },
+  {
     nome: "Washington Wizards",
     imagem: "assets/logo-Washington_Wizards.png",
     classe: "washington_wizards",
@@ -152,7 +214,8 @@ const conferenciaOeste = [
 const conteudo = document.querySelector("#ecolha_times");
 const conferenciaLesteBotao = document.querySelector("#cl");
 const conferenciaOesteBotao = document.querySelector("#co");
-const tituloPrincipal = document.querySelector("#titulo-principal")
+const tituloPrincipal = document.querySelector("#titulo-principal");
+const elencosTime = document.querySelector("#lista_jogadores");
 
 conferenciaLesteBotao.addEventListener("click", () => {
   renderizarLista(conferenciaLeste);
@@ -172,19 +235,31 @@ function selecionarItem(itemClicado) {
   itemClicado.classList.add("escolhido");
 }
 
+function renderizaJogadores(jogadores) {
+  elencosTime.innerHTML = "";
+  for (const jogador of jogadores) {
+    const molduraJogador = document.createElement("img");
+    molduraJogador.setAttribute("src", jogador);
+
+    elencosTime.appendChild(molduraJogador);
+  }
+}
+
 function renderizarLista(lista) {
   conteudo.innerHTML = "";
-  for (const time of lista) { 
+  elencosTime.innerHTML = "";
+  for (const time of lista) {
     const moldura = document.createElement("div"); // Cria moldura
     moldura.setAttribute("class", "time_escolhido animacao"); // Seta classes da moldura
 
     // Adiciona evento de clique
     moldura.addEventListener("click", (e) => {
-      document.body.setAttribute("class", time.classe)// Seta classe da cor no body
-      selecionarItem(moldura) // Add classe do marcador
+      document.body.setAttribute("class", time.classe); // Seta classe da cor no body
+      selecionarItem(moldura); // Add classe do marcador
       tituloPrincipal.innerText = time.nome; // add nome time a titulo Principal
+      renderizaJogadores(time.jogadores);
     });
-    
+
     const imagem = document.createElement("img"); // Cria elemento da imagem
     imagem.setAttribute("src", time.imagem); // Seta imagem
     imagem.setAttribute("class", "times"); // Seta classe time

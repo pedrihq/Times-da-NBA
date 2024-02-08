@@ -41,6 +41,7 @@ body h1 {
     #d64e63 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100%;
 }
 .boston_celtics {
   background: linear-gradient(
@@ -49,6 +50,7 @@ body h1 {
     rgba(74, 165, 122, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100%;
 }
 .brookliyn_nets {
   background: linear-gradient(
@@ -57,6 +59,7 @@ body h1 {
     rgba(59, 72, 79, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100%;
 }
 .charlotte_hornet {
   background: linear-gradient(
@@ -66,6 +69,7 @@ body h1 {
     rgba(166, 165, 184, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .chicago_bulls {
   background: linear-gradient(
@@ -74,6 +78,7 @@ body h1 {
     rgba(140, 20, 55, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .cleveland_cavalier {
   background: linear-gradient(
@@ -85,6 +90,7 @@ body h1 {
     rgba(134, 1, 56, 1) 86%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .miami_heat {
   background: linear-gradient(
@@ -93,6 +99,7 @@ body h1 {
     rgba(236, 153, 28, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .milwaukee_bucks {
   background: linear-gradient(
@@ -101,6 +108,7 @@ body h1 {
     rgba(78, 122, 84, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .new_york_knicks {
   background: linear-gradient(
@@ -109,6 +117,7 @@ body h1 {
     rgba(42, 71, 138, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .orlando_magic {
   background: linear-gradient(
@@ -117,6 +126,7 @@ body h1 {
     rgba(28, 130, 198, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .philadelphia_76ers {
   background: linear-gradient(
@@ -125,14 +135,17 @@ body h1 {
     rgba(29, 66, 138, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .toronto_raptors {
   background: #cd1844 !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .toronto_raptors {
   background: #cd1844 !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .detroit_pistons {
   background: linear-gradient(
@@ -142,6 +155,7 @@ body h1 {
     rgba(254, 251, 252, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .indiana_pacers {
   background: linear-gradient(
@@ -150,6 +164,7 @@ body h1 {
     rgba(1, 45, 98, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .washington_wizards {
   background: linear-gradient(
@@ -159,6 +174,7 @@ body h1 {
     rgba(230, 38, 62, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 
 /*Mudança de cores de cada equipe CO*/
@@ -170,6 +186,7 @@ body h1 {
     rgba(253, 253, 254, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .denver_nuggets {
   background: linear-gradient(
@@ -179,6 +196,7 @@ body h1 {
     rgba(137, 37, 49, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .golden_state_warriors {
   background: linear-gradient(
@@ -187,6 +205,7 @@ body h1 {
     rgba(250, 185, 39, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .houston_rockets {
   background: linear-gradient(
@@ -195,6 +214,7 @@ body h1 {
     rgba(204, 17, 65, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .los_angeles_clippers {
   background: linear-gradient(
@@ -204,6 +224,7 @@ body h1 {
     rgba(29, 65, 138, 1) 80%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .los_angeles_lakers {
   background: linear-gradient(
@@ -213,6 +234,7 @@ body h1 {
     rgba(247, 180, 41, 1) 80%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .memphis_grizzlies {
   background: linear-gradient(
@@ -221,6 +243,7 @@ body h1 {
     rgba(19, 23, 63, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .minnesota {
   background: linear-gradient(
@@ -229,6 +252,7 @@ body h1 {
     rgba(37, 94, 143, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .new_orleans_pelicans {
   background: linear-gradient(
@@ -238,6 +262,7 @@ body h1 {
     rgba(173, 147, 89, 1) 80%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .oklahoma_city_thunder {
   background: linear-gradient(
@@ -247,6 +272,7 @@ body h1 {
     rgba(249, 186, 62, 1) 80%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .phonix_suns {
   background: linear-gradient(
@@ -255,6 +281,7 @@ body h1 {
     rgba(247, 159, 27, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .portland_trail_blazers {
   background: linear-gradient(
@@ -263,6 +290,7 @@ body h1 {
     rgba(219, 56, 61, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .sacramento_kings {
   background: linear-gradient(
@@ -271,6 +299,7 @@ body h1 {
     rgba(99, 113, 121, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .san_antonio_spurs {
   background: linear-gradient(
@@ -280,6 +309,7 @@ body h1 {
     rgba(132, 143, 149, 1) 80%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 .utah_jazz {
   background: linear-gradient(
@@ -288,6 +318,7 @@ body h1 {
     rgba(255, 255, 255, 1) 100%
   ) !important;
   transition: all 0.25s ease-in-out;
+  height: 100vh;
 }
 
 /*navbar de escolher qual a conferência(leste/oste)*/
@@ -306,7 +337,7 @@ body h1 {
   text-align: center;
 }
 #nav_primaria div:hover {
-  border-bottom: 1px solid var(--cor-principal);
+  border-bottom: 3px solid var(--cor-principal);
 }
 .coferencia_escolhida {
   border-bottom: 1px solid var(--cor-principal);
@@ -328,7 +359,15 @@ body h1 {
   border-top: 2px solid var(--cor-principal);
 }
 /*Dimenção do celular. navbar feita para escolher o time*/
-@media (max-width: 999px) {
+@media (max-width: 999px) and (min-width: 185px) {
+  #ecolha_times {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0;
+  }
+}
+@media (max-width: 1140px) and (min-width:  999px) {
   #ecolha_times {
     white-space: nowrap;
     overflow-x: auto;
@@ -337,7 +376,7 @@ body h1 {
   }
 }
 /*Dimenção do 1185px. navbar feita para escolher o time*/
-@media (max-width: 1185px) {
+@media (max-width: 1185px) and (min-width: 999px) {
   #escolhas_times {
     white-space: nowrap;
     overflow-x: auto;
@@ -346,7 +385,7 @@ body h1 {
   }
 }
 /*Dimenção do 1000. navbar feita para escolher o time*/
-@media (max-width: 1345px) and (min-width: 1000px) {
+@media (max-width: 1345px) and (min-width: 1185px) {
   #escolhas_times {
     white-space: nowrap;
     overflow-x: auto;
@@ -425,7 +464,6 @@ body h1 {
     margin: 0 25%;
   }
 }
-
 /*animação dos bnt*/
 .animacao {
   transition: all linear 0.2s;
@@ -433,3 +471,70 @@ body h1 {
 .animacao:active {
   transform: scale(90%);
 }
+/*Elencos dos time styles*/
+#elenco {
+  display: grid;
+  justify-content: center;
+  padding: 40px 70px;
+  gap: 5em;
+  text-align: center;
+  padding-bottom: 10em;
+}
+#elenco img {
+  height: 150px;
+  width: 200px;
+  border: 2px solid var(--cor-principal);
+  text-align: center;
+  border-radius: 5px;
+  margin: 1em;
+}
+#elenco img:hover {
+  background-color: var(--cor-principal);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/*Dimenção do celular. img do jogadores*/
+@media (max-width: 450px) and (min-width: 200px) {
+  #elenco img {
+    width: 110px;
+    height: 95px;
+    margin: 5px;
+  }
+  #elenco{
+    padding: 20px 0px;
+  }
+}
+/*Dimenção do celular. img do jogadores*/
+@media (max-width: 999px) and (min-width: 450px) {
+  #elenco img {
+    width: 110px;
+    height: 95px;
+    margin: 2px;
+  }
+  #elenco{
+    padding: 20px 20px;
+  }
+}
+/*Dimenção do celular. img do jogadores*/
+@media (max-width: 999px) and (min-width: 999px){
+  #elenco img {
+    width: 130px;
+    height: 120px;
+  }
+}
+/*Dimenção do celular. img do jogadores*/
+@media (max-width: 1300px) and (min-width: 1000px) {
+  #elenco img {
+    width: 149px;
+    height: 120px;
+  }
+}
+/*Dimenção do celular. img do jogadores*/
+@media (max-width: 1300px) and (min-width: 1300px){
+  #elenco img{
+    width: 169px;
+    height: 150px;
+  }
+}
+
+
